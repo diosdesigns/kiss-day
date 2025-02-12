@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Kiss Day</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+            background-color: #ffccd5;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        h1 {
+            color: #d63384;
+        }
+        button {
+            background-color: #d63384;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 18px;
+            cursor: pointer;
+            margin-top: 20px;
+            border-radius: 5px;
+        }
+        img {
+            width: 300px;
+            height: auto;
+            border-radius: 10px;
+            margin-top: 20px;
+            display: none;
+        }
+    </style>
+    <script>
+        function showGif(button) {
+            button.style.display = 'none';
+            document.getElementById('kissGif').style.display = 'block';
+        }
+    </script>
+</head>
+<body>
+    <h1>Happy Kiss Day! 💋</h1>
+    <button onclick="showGif(this)">Click for a Kiss! 💋</button>
+    <img id="kissGif" src="https://media.giphy.com/media/Z21HJj2kz9uBG/giphy.gif" alt="Kissing GIF">
+</body>
+</html>
